@@ -31,7 +31,8 @@ Para garantir a simplicidade e a viabilidade do projeto, utilizamos apenas as te
 
 Como o site está alojado no GitHub Pages, pode aceder-lhe diretamente a partir de qualquer navegador de internet, seja no telemóvel ou no computador, através da ligação gerada pelo GitHub:
 
-**[Insira aqui a ligação do seu GitHub Pages gerado]**
+**https://nicolikoetz-pixel.github.io/Um-mundo-melhor-para-n-s/**
+
 
 ---
 
