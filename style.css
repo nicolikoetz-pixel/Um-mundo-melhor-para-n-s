@@ -1,26 +1,130 @@
-CSS
-body {
-    background-color: #f4f4f9;
-    color: #2e7d32;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.fazenda {
-    background-color: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+body {
+    background-color: #f1f8e9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
     text-align: center;
-    max-width: 600px;
-    border: 3px solid #4caf50;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-h1 {
+main {
+    max-width: 800px;
+    margin: -2rem auto 2rem auto;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.info-section, .app-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.info-section {
+    border-left: 5px solid #8bc34a;
+}
+
+h2 {
     color: #2e7d32;
-    margin-top: 0;
-} 
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #558b2f;
+}
+
+select, input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #c5e1a5;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f9fbe7;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+.resultado-oculto {
+    display: none;
+}
+
+.resultado-visivel {
+    display: block;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    border: 2px solid #8bc34a;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#nome-receita {
+    font-size: 1.4rem;
+    color: #1b5e20;
+    margin-bottom: 1rem;
+}
+
+.receita-box {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 5px solid #4caf50;
+    text-align: left;
+}
+
+.receita-box h4 {
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
+}
+
+.receita-box ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
