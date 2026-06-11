@@ -2,23 +2,59 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Um mundo melhor para nós</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Biodefensivos - Agrinho</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bem-vindo um mundo melhor para nós!</h1>
-    <p>A nossa semente foi plantada.</p>
-</body>
-</html>
-<div class="fazenda">
-        <h1>Um mundo melhor para nós 🌿</h1>
-        <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente.</p>
-        
-        <!-- O nosso trator vai estacionar aqui depois! -->
-        <div id="sistema-rural"></div>
-    </div>
+    <header>
+        <h1>🌿 Biodefensivo Exato</h1>
+        <p>Receitas ecológicas sob medida para o seu pulverizador.</p>
+    </header>
 
-    <!-- Ligando o nosso trator (JS) -->
+    <main>
+        <section class="info-section">
+            <h2>Por que usar caldas naturais?</h2>
+            <p>Os biodefensivos protegem a sua lavoura de forma sustentável, sem agredir o solo, os polinizadores e a saúde de quem consome os alimentos. Calcule a dose exata para evitar desperdícios.</p>
+        </section>
+
+        <section class="app-section">
+            <h2>Calcule a sua Receita</h2>
+            
+            <form id="receitaForm">
+                <div class="input-group">
+                    <label for="problema">Qual é o problema na lavoura?</label>
+                    <select id="problema" required>
+                        <option value="" disabled selected>Selecione a praga ou doença...</option>
+                        <option value="pulgoes">Pulgões e Cochonilhas (Insetos sugadores)</option>
+                        <option value="lagartas">Lagartas e Besouros (Insetos mastigadores)</option>
+                        <option value="fungos">Fungos nas folhas (Oídio, Ferrugem)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="litros">Capacidade do Pulverizador (em Litros):</label>
+                    <input type="number" id="litros" placeholder="Ex: 5 ou 20" required min="1">
+                </div>
+
+                <button type="submit">Calcular Receita Proporcional</button>
+            </form>
+
+            <div id="resultado" class="resultado-oculto">
+                <h3>Sua Receita Calculada:</h3>
+                <h4 id="nome-receita">Receita</h4>
+                
+                <div class="receita-box">
+                    <h4>📝 Ingredientes Exatos:</h4>
+                    <ul id="lista-ingredientes"></ul>
+                    
+                    <h4 class="mt-15">👨‍🌾 Modo de Preparo e Aplicação:</h4>
+                    <p id="modo-preparo"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
-
